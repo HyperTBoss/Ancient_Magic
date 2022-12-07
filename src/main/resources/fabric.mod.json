@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "ancient_magic",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Ancient Magic",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "HyperTBoss"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/HyperTBoss/Ancient_Magic"
   },
 
   "license": "CC0-1.0",
@@ -19,11 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.hypertboss.ancient_magic.Ancient_Magic"
+    ],
+    "client": [
+      "net.hypertboss.ancient_magic.AncientMagicModClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "ancient_magic.mixins.json"
   ],
 
   "depends": {
